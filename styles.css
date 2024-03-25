@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Madimi One", sans-serif;
+  color: #088b8b;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userInput {
+  margin-top: 75px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.userInput p {
+  font-size: 66px;
+  font-weight: 50;
+}
+.userInput input {
+  width: 200px;
+  height: 40px;
+  border: 2px solid #088b8b;
+  border-radius: 10px;
+  font-family: "Madimi One", sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+.userInput input {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main-container {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+}
+.circle-container {
+  width: 400px;
+  height: 400px;
+  background-color: #ddd;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+}
+.semicircle {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: right center;
+}
+.semicircle:nth-child(1) {
+  background-color: #088b8b;
+  z-index: 2;
+}
+.semicircle:nth-child(2) {
+  background-color: #088b8b;
+  z-index: 3;
+}
+.semicircle:nth-child(3) {
+  background-color: #ddd;
+  z-index: 4;
+}
+.outermost-circle {
+  width: 380px;
+  height: 380px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 5;
+}
+.timer-container {
+  width: 330px;
+  height: 200px;
+  z-index: 6;
+}
+.timer {
+  width: 400px;
+  height: 400px;
+  z-index: 7;
+}
+.timer div {
+  font-size: 70px;
+  font-weight: 100;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 0 10px 0 10px;
+}
+.timer .colon {
+  background-color: transparent;
+  width: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 15px;
+}
+#startButton {
+  width: 200px;
+  height: 55px;
+  border: 2px solid #088b8b;
+  border-radius: 10px;
+  font-family: "Madimi One", sans-serif;
+  font-size: 38px;
+  cursor: pointer;
+  background-color: white;
+  color: #088b8b;
+  transition: 0.3s ease;
+}
+#startButton:hover {
+  background-color: #088b8b;
+  color: white;
+  transition: 0.3s ease;
+}
