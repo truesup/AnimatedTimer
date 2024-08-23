@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
 * {
   margin: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Madimi One", sans-serif;
+  font-family: 'Madimi One', sans-serif;
   color: #088b8b;
 }
 .center {
@@ -22,6 +22,7 @@ html {
   gap: 20px;
 }
 .userInput p {
+  text-align: center;
   font-size: 66px;
   font-weight: 50;
 }
@@ -30,11 +31,9 @@ html {
   height: 40px;
   border: 2px solid #088b8b;
   border-radius: 10px;
-  font-family: "Madimi One", sans-serif;
+  font-family: 'Madimi One', sans-serif;
   font-size: 25px;
   text-align: center;
-}
-.userInput input {
   outline: none;
 }
 input::-webkit-outer-spin-button,
@@ -115,7 +114,7 @@ input::-webkit-inner-spin-button {
   height: 55px;
   border: 2px solid #088b8b;
   border-radius: 10px;
-  font-family: "Madimi One", sans-serif;
+  font-family: 'Madimi One', sans-serif;
   font-size: 38px;
   cursor: pointer;
   background-color: white;
@@ -126,4 +125,50 @@ input::-webkit-inner-spin-button {
   background-color: #088b8b;
   color: white;
   transition: 0.3s ease;
+}
+@media (max-width: 795px) {
+  .userInput {
+    margin-top: 50px;
+    gap: 15px;
+  }
+  .userInput p {
+    font-size: 58px;
+  }
+  .userInput input {
+    font-size: 20px;
+  }
+  .timer div {
+    font-size: 60px;
+  }
+  #startButton {
+    width: 180px;
+    height: 50px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 420px) {
+  .userInput {
+    margin-top: 30px;
+    gap: 10px;
+  }
+  .userInput p {
+    font-size: 50px;
+  }
+  .userInput input {
+    font-size: 16px;
+  }
+  .circle-container {
+    width: 300px;
+    height: 300px;
+  }
+  .outermost-circle {
+    width: 280px;
+    height: 280px;
+  }
+  .timer div {
+    font-size: 60px;
+  }
+  #startButton {
+    font-size: 28px;
+  }
 }
